@@ -26,7 +26,7 @@ const CheckoutPage = ({ cartItems, setCartItems }) => {
     };
 
     // ✅ FULL URL USED — NO DEPENDENCE ON PROXY
-    fetch('http://localhost:5000/api/orders', {
+    fetch('https://anniclone-cafe.onrender.com/api/orders', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(order)
