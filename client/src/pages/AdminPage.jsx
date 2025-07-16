@@ -8,7 +8,7 @@ const AdminPage = () => {
   const [activeReceipt, setActiveReceipt] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/orders')
+    fetch('https://anniclone-cafe.onrender.com/api/orders')
       .then(res => res.json())
       .then(data => {
         setOrders(data);
